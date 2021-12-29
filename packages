@@ -1,0 +1,23 @@
+// creating the first package;
+
+// package pack;
+
+// public class A
+// {
+// public void message()
+// {
+//     System.out.println("chutiya log hai duniya mai bhai jaane do abhi");
+// }
+// }
+
+// creating the second package which will import from the fist package
+// package mypack;
+// import pack.A;
+// public class B
+// {
+//     public static void main(String[] args)
+//     {
+//         A.obj=new A();
+//        System.out.println("this is the message from package one"+ obj.message());
+//     }
+// }

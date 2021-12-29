@@ -1,0 +1,112 @@
+// there are four type of access modifiers
+// 1.private member 
+
+// public class Access
+// {
+// private int a=40;
+// }
+// public class Simple
+// {
+//     public static void main(String[] args)
+//     {
+//         Acess obj=new Acess();
+//         System.out.println(Acess.a());
+//         // in the above the error will occur because the int which we are using are the private;
+//     }
+// }
+
+// 1.b private constructor
+// public class Access
+// {
+//  private Access()
+//  {
+//      System.out.println("hello i am the private constructor");
+//  }
+// }
+// public class Simple
+// {
+//     public static void main(String[] args)
+//     {
+//         Access obj=new Acess;
+//     // the error will come because the constructor is the private constructor;
+//     }
+// }
+
+// 2.default 
+// when we dont use any modifier its treated as the default modifier 
+
+// package pack;
+
+// class A
+// {
+//     void message()
+//     {
+//         System.out.println("i am from class a");
+//     }
+// }
+
+// package mypack;
+// import pack.A;
+// class B
+// {
+//     public static void main(String[] args)
+//     {
+//         A obj=new A();
+//         obj.message();
+        // the above message will not didolay as the deafutl constructor is used;
+//     }
+// }
+
+// 3.protected
+// proctected class are available outside the class but only by inheritance;
+    
+// package pack;
+// public class A
+// {
+//     protected void message()
+//     {
+//         System.out.println("hello i am message from the protected to access me you shoul extend my class");
+//     }
+// }
+
+// package mypack;
+// import pack.A;
+
+// class B extend A
+// {
+//     public static void main(String[] args)
+//     {
+//         B.obj=new B();
+//         obj.message();
+//     }
+// }
+
+// 4 public
+// can be used by all; 
+// package pack;  
+// public class A{  
+// public void msg(){System.out.println("Hello");}  
+// }  
+
+// package mypack;  
+// import pack.A;  
+  
+// class B{  
+//   public static void main(String args[]){  
+//    A obj = new A();  
+//    obj.msg();  
+//   }  
+// }  
+
+// overriding method 
+// class A{  
+//     protected void msg(){System.out.println("Hello java");}  
+//     }  
+      
+//     public class Simple extends A{  
+//     void msg(){System.out.println("Hello java");}//C.T.Error  
+//      public static void main(String args[]){  
+//        Simple obj=new Simple();  
+//        obj.msg();  
+//        }  
+//     }  
